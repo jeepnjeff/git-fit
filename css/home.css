@@ -10,8 +10,27 @@
 .divider-color         { border-color: #BDBDBD; }
 /* End of color Scheme*/
 
-/*start of navbar */
-.nav-bar {
+/*  Google Font Family  */
+font-family: 'Roboto Slab', serif;
+font-family: 'Anton', sans-serif;
+font-family: 'Lobster', cursive;
+/* End of Google font family */
+
+/*start of navbar and Header */
+.navi-bar {
   background-color: #1976D2;
   height: 5vh;
+}
+.header-bar {
+  background-color: #2196F3;
+  height: 25vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header-text {
+  colot:#212121;
+  font-size: 2.5em;
+  font-weight: 700;
+  font-family: Lobster;
 }

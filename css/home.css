@@ -16,9 +16,21 @@ font-family: 'Anton', sans-serif;
 font-family: 'Lobster', cursive;
 /* End of Google font family */
 
+/* Body CSS */
+body {
+  background-color: #fff;
+  width: 100%;
+
+}
+
+/* End of Body CSS */
 /*start of navbar and Header */
 .navi-bar {
   background-color: #1976D2;
+  height: 5vh;
+}
+.navi-bar{
+  background-color: #1976d2;
   height: 5vh;
 }
 .header-bar {
@@ -31,6 +43,10 @@ font-family: 'Lobster', cursive;
 .header-text {
   colot:#212121;
   font-size: 2.5em;
-  font-weight: 700;
+  font-weight: 400;
   font-family: Lobster;
+}
+
+.form-container {
+  background-color: #757575;
 }

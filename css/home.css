@@ -29,10 +29,7 @@ body {
   background-color: #1976D2;
   height: 5vh;
 }
-.navi-bar{
-  background-color: #1976d2;
-  height: 5vh;
-}
+
 .header-bar {
   background-color: #2196F3;
   height: 25vh;
@@ -47,6 +44,6 @@ body {
   font-family: Lobster;
 }
 
-.form-container {
+.form-background {
   background-color: #757575;
 }

@@ -13,6 +13,7 @@
 </head>
 
 <body>
+  <!--Header Nav Section  -->
   <div class="container-fluid">
     <div class="row">
       <div class="col-md-12 navi-bar">
@@ -28,23 +29,68 @@
       </div>
     </div>
   </div>
-  <div class="container form-container">
 
-    <form>
-      <div class="form-group">
-    <label for="email">Email address:</label>
-    <input type="email" class="form-control" id="email">
+  <!-- Form Section -->
+  <!-- Gender Row-->
+  <div class="container-fluid">
+    <div class="row justify-content-center text">
+      <div class="col-md-2 form-background">
+        <h3>Gender</h3>
+      </div>
+      <div class="col-md-4 form-background">
+        <div class="form-check form-check-inline">
+          <label class="form-check-label">
+        <input class="form-check-input" type="radio" name="inlineMaleOptions" id="inlineMale" value="option1"> Male
+      </label>
+        </div>
+        <div class="form-check form-check-inline">
+          <label class="form-check-label">
+        <input class="form-check-input" type="radio" name="inlineFemaleOptions" id="inlineFemale" value="option1"> Female
+      </label>
+        </div>
+      </div>
+    </div>
+    <!-- End of Gender Row  -->
+    <!-- Start of Height Row -->
+    <div class="row justify-content-center">
+      <div class="col-md-2 form-background">
+        <h3>Height</h3>
+      </div>
+      <div class="col-md-4 form-background">
+        <div class="input-group form-inline">
+          <div class="input-group-append">
+            <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Feet</button>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">3</a>
+              <a class="dropdown-item" href="#">4</a>
+            </div>
+          </div>
+          <input type="text" class="form-control" aria-label="Text input with dropdown button">
+        </div>
+        <div class="input-group form-inline">
+          <div class="input-group-append">
+            <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Inches</button>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">1</a>
+              <a class="dropdown-item" href="#">2</a>
+            </div>
+          </div>
+          <input type="text" class="form-control" aria-label="Text input with dropdown button">
+        </div>
+
+      </div>
+    </div>
+
+    <!-- End of Height Row -->
+
   </div>
-  <div class="form-group">
-    <label for="pwd">Password:</label>
-    <input type="password" class="form-control" id="pwd">
-  </div>
-  <div class="checkbox">
-    <label><input type="checkbox"> Remember me</label>
-  </div>
-  <button type="submit" class="btn btn-default">Submit</button>
-    </form>
-  </div>
+  <!--Form Container-Fluid Closing div
+<!-- End of Gender Row  -->
+  <!-- Start of Height Row -->
+
+
+
+  <!-- End of Height Row -->
 
 
   <!-- Script Section -->

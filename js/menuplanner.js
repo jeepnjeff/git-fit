@@ -37,7 +37,7 @@ const mediumcalorie = () => {
   freshberries.printitem()
 }
 const highcalorie = () => {
-  let egg = new MenuItem("brk3row1", 2, "Whole","Egg",1)
+  let egg = new MenuItem("brk3row1", 2, "Whole","Egg", 1)
   let eggwhites = new MenuItem("brk3row2", 1.5, "Cup", "Egg Whites", 190)
   let rawoats = new MenuItem("brk3row3", 1.5, "Cup", "Raw Oats", 450)
   let freshberries = new MenuItem("brk3row4", 1.5, "Cup", "Fresh Berries", 120)

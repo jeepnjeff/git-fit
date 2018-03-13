@@ -18,6 +18,9 @@ h2 {
   margin: auto;
   font-family: Play;
 }
+.justify {
+  justify-content: center;
+}
 h3 {
   font-size: 2em;
   margin: auto;
@@ -31,6 +34,9 @@ p {
   display: block;
   font-size: 15px;
 }
+.block {
+  display: block;
+}
 .border {
   border: 5px solid black;
 }
@@ -39,10 +45,24 @@ p {
 }
 .header {
   display: flex;
-  height: 300px;
+  height: 150px;
 }
 .customnavbar {
-  display: flex;
+  height: 30px;
+}
+.subheader {
+  color: white;
+  font-size: 1.25em;
+}
+.caltotal {
+  font-size: 1.2em;
+}
+.button{
+  background-color: #9E9E9E;
+  border: 2px solid black;
+  margin-left: 5px;
+  margin-right: 5px;
+  padding: 5px;
 }
 .customnavbartext {
   text-align: right;
@@ -56,4 +76,7 @@ p {
 .menuheadertext {
   font-family: Play;
   margin: auto;
+}
+.displaynone {
+  display: none;
 }

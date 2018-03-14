@@ -7,9 +7,15 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Home Page</title>
   <!-- Bootstrap Link -->
+
+
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/css/bootstrap-select.min.css">
+
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Anton|Lobster|Roboto+Slab">
-  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
   <link rel="stylesheet" href="css/home.css">
+  <link rel="stylesheet" href="js/form.js">
 </head>
 
 <body>
@@ -31,71 +37,137 @@
   </div>
 
   <!-- Form Section -->
-  <!-- Gender Row-->
+  <!--  Start Gender Row-->
   <div class="container-fluid">
     <div class="row justify-content-center text">
       <div class="col-md-2 form-background">
         <h3>Gender</h3>
       </div>
-      <div class="col-md-4 form-background">
+      <div class="col-md-2 form-background">
         <div class="form-check form-check-inline">
           <label class="form-check-label">
-        <input class="form-check-input" type="radio" name="inlineMaleOptions" id="inlineMale" value="option1"> Male
+        <input class="form-check-input" type="radio" name="inlineMaleOptions" id="male" value="option1"> Male
       </label>
         </div>
         <div class="form-check form-check-inline">
           <label class="form-check-label">
-        <input class="form-check-input" type="radio" name="inlineFemaleOptions" id="inlineFemale" value="option1"> Female
+        <input class="form-check-input" type="radio" name="inlineFemaleOptions" id="female" value="option1"> Female
       </label>
         </div>
       </div>
     </div>
     <!-- End of Gender Row  -->
+
     <!-- Start of Height Row -->
     <div class="row justify-content-center">
       <div class="col-md-2 form-background">
         <h3>Height</h3>
       </div>
-      <div class="col-md-4 form-background">
-        <div class="input-group form-inline">
-          <div class="input-group-append">
-            <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Feet</button>
-            <div class="dropdown-menu">
-              <a class="dropdown-item" href="#">3</a>
-              <a class="dropdown-item" href="#">4</a>
-            </div>
-          </div>
-          <input type="text" class="form-control" aria-label="Text input with dropdown button">
-        </div>
-        <div class="input-group form-inline">
-          <div class="input-group-append">
-            <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Inches</button>
-            <div class="dropdown-menu">
-              <a class="dropdown-item" href="#">1</a>
-              <a class="dropdown-item" href="#">2</a>
-            </div>
-          </div>
-          <input type="text" class="form-control" aria-label="Text input with dropdown button">
-        </div>
-
+      <div class="col-md-1 form-background">
+        <select class="form-control" id="feet" name="feet">
+          <option data-hidden="true"> Feet</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5</option>
+          <option>6</option>
+          <option>7</option>
+       </select>
+      </div>
+      <div class="col-md-1 form-background">
+        <select class="form-control" id="inch" name="inch">
+          <option data-hidden="true"> Inch</option>
+          <option>0</option>
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5</option>
+          <option>6</option>
+          <option>7</option>
+          <option>8</option>
+          <option>9</option>
+          <option>10</option>
+          <option>11</option>
+        </select>
       </div>
     </div>
 
     <!-- End of Height Row -->
 
+    <!-- Start of Weight Sectiion  -->
+    <div class="row justify-content-center">
+      <div class="col-md-2 form-background">
+        <h3>Weight</h3>
+      </div>
+      <div class="col-md-2 form-background">
+        <input class="form-control"  id="weight" type="text" placeholder="Enter Pounds">
+      </div>
+    </div>
+    <!-- End of Weight Sectiion  -->
+
+    <!-- Start of Age Section -->
+    <div class="row justify-content-center">
+      <div class="col-md-2 form-background">
+        <h3>Age</h3>
+      </div>
+      <div class="col-md-2 form-background">
+        <input class="form-control" id="age" type="text" placeholder="Age">
+      </div>
+    </div>
+    <!-- End of Age Section -->
+
+    <!-- Start of Activity Level Section -->
+    <div class="row justify-content-center">
+      <div class="col-md-2 form-background">
+        <h3>Activity Level</h3>
+      </div>
+            <div class="col-md-2 form-background">
+          <select class="form-control" id="activity" name="activity">
+            <option data-hidden="true"> Activity</option>
+            <option>Sedentary</option>
+            <option>Low Active</option>
+            <option>Active</option>
+          </select>
+        </div>
+      </div>
+      <!-- End of Activity Level Section -->
+
+      <!-- Calculate buttonS -->
+<div class="row text-center justify-content-center">
+<div class="col-md-4 form-background">
+<button type="button" class="btn btn-primary" id="calculate">Calculate</button>
+</div>
+</div>
+
+<div class="row text-center justify-content-center">
+<div class="col-md-4 form-background">
+<button type="button" class="btn btn-light" id="rest">Reset</button>
+</div>
+</div>
+
+
+
+
+
+
+
   </div>
-  <!--Form Container-Fluid Closing div
-<!-- End of Gender Row  -->
-  <!-- Start of Height Row -->
-
-
-
-  <!-- End of Height Row -->
+  <!--Form Container-Fluid Closing div-->
 
 
   <!-- Script Section -->
-  <scrit src="node_modules/jquery/dist/jquery.js"></scrit>
-  <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/js/bootstrap-select.min.js"></script>
+
+  <!-- <script src="node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="node_modules/popper.js/dist/popper.min.js"></script>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script> -->
+  <!-- <script src="node_modules/bootstrap-select/dist/js/bootstrap-select.min.js"></script> -->
+
 </body>
 
 </html>

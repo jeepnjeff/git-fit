@@ -48,3 +48,16 @@ body {
   background-color: #757575;
   padding: 1%;
 }
+.results {
+    padding: 20px;
+    background-color: #fff;
+    color: #222;
+    margin: 1.5em 0;
+    box-sizing: border-box;
+}
+.result {
+    font-size: 36px;
+    font-family: 'Arial-BoldMT','Arial Bold','Arial';
+    vertical-align: middle;
+    line-height: 40px;
+}

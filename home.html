@@ -5,17 +5,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Home Page</title>
+  <title>Git Fit</title>
   <!-- Bootstrap Link -->
 
-
-
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/css/bootstrap-select.min.css">
+<script type="text/javascript" src="js/calculator.js"></script>
 
   <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Anton|Lobster|Roboto+Slab">
   <link rel="stylesheet" href="css/home.css">
-  <link rel="stylesheet" href="js/form.js">
 </head>
 
 <body>
@@ -51,7 +48,7 @@
         </div>
         <div class="form-check form-check-inline">
           <label class="form-check-label">
-        <input class="form-check-input" type="radio" name="inlineFemaleOptions" id="female" value="option1"> Female
+        <input class="form-check-input" type="radio" name="inlineFemaleOptions" id="female" value="option2"> Female
       </label>
         </div>
       </div>
@@ -123,10 +120,10 @@
       </div>
       <div class="col-md-2 form-background">
         <select class="form-control" id="activity" name="activity">
-            <option data-hidden="true"> Activity</option>
-            <option>Sedentary</option>
-            <option>Low Active</option>
-            <option>Active</option>
+            <option data-hidden="true">Activity</option>
+            <option id="sedentary" value="1.2">Sedentary</option>
+            <option id="Active" value="1.375">Low Active</option>
+            <option id="Active" value="1.75">Active</option>
           </select>
       </div>
     </div>
@@ -135,25 +132,22 @@
     <!-- Calculate buttonS -->
     <div class="row text-center justify-content-center">
       <div class="col-md-4 form-background">
-        <button type="button" class="btn btn-primary" id="calculate">Calculate</button>
+        <button onclick="calCount()" type="button" class="btn btn-primary">Calculate</button>
       </div>
     </div>
 
     <div class="row text-center justify-content-center">
       <div class="col-md-4 form-background">
-        <button type="button" class="btn btn-light" id="rest">Reset</button>
+        <button onclick="reset()" type="button" class="btn btn-light" id="rest">Reset</button>
       </div>
     </div>
 <div class="row text-center justify-content-center">
     <div class="col-md-4 form-background">
-      <h5 class="results">
-        <span>"To maintain your current weight you'll need " "" calories per day"</span>
-      </h5>
+      <div class="results">
+        <h5 id="calculate"></h5>
+      </div>
     </div>
   </div>
-
-
-
 
 
   </div>
@@ -161,17 +155,13 @@
 
 
   <!-- Script Section -->
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/js/bootstrap-select.min.js"></script>
-
-  <!-- <script src="node_modules/jquery/dist/jquery.min.js"></script>
+  <script type="text/javascript" src="js/calculator.js"></script>
+  <script src="node_modules/jquery/dist/jquery.min.js"></script>
   <script src="node_modules/popper.js/dist/popper.min.js"></script>
-  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script> -->
-  <!-- <script src="node_modules/bootstrap-select/dist/js/bootstrap-select.min.js"></script> -->
+  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script <src="">
+  </script>
+
 
 </body>
 

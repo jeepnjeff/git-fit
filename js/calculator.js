@@ -56,9 +56,11 @@ console.log (ageTotal);
 
 // Calulate Male kilocalories
 
-function calCount () {
-if (male == true);
-
+// if (male == true);
+function calButton (poundsTotal, ageTotal) {
+  if (male == true);
+  var mResults = parseInt (poundsTotal + ageTotal);
+document.getElementById ("calculate").value.innerHTML = mResults;
 }
 
 

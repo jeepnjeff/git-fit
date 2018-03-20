@@ -43,12 +43,12 @@
       <div class="col-md-2 form-background">
         <div class="form-check form-check-inline">
           <label class="form-check-label">
-        <input class="form-check-input" type="radio" name="inlineMaleOptions" id="male" value="option1"> Male
+        <input class="form-check-input"  type="radio" name="gender" id="male" value="optionMale"> Male
       </label>
         </div>
         <div class="form-check form-check-inline">
           <label class="form-check-label">
-        <input class="form-check-input" type="radio" name="inlineFemaleOptions" id="female" value="option2"> Female
+        <input class="form-check-input" type="radio" name="gender" id="female" value="optionFemale"> Female
       </label>
         </div>
       </div>
@@ -61,30 +61,30 @@
         <h3>Height</h3>
       </div>
       <div class="col-md-1 form-background">
-        <select class="form-control" id="feet" name="feet">
-          <option data-hidden="true"> Feet</option>
-          <option>3</option>
-          <option>4</option>
-          <option>5</option>
-          <option>6</option>
-          <option>7</option>
+        <select class="form-control" id="feetList" onchange="heightValue ();">
+          <option data-hidden="true">Feet</option>
+          <option value="36">3</option>
+          <option value="48">4</option>
+          <option value="60">5</option>
+          <option value="72">6</option>
+          <option value="84">7</option>
        </select>
       </div>
       <div class="col-md-1 form-background">
-        <select class="form-control" id="inch" name="inch">
-          <option data-hidden="true"> Inch</option>
-          <option>0</option>
-          <option>1</option>
-          <option>2</option>
-          <option>3</option>
-          <option>4</option>
-          <option>5</option>
-          <option>6</option>
-          <option>7</option>
-          <option>8</option>
-          <option>9</option>
-          <option>10</option>
-          <option>11</option>
+        <select class="form-control" id="inchList" onchange="heightValue ();">
+          <option data-hidden="true">Inch</option>
+          <option value="0">0</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+          <option value="11">11</option>
         </select>
       </div>
     </div>
@@ -97,7 +97,7 @@
         <h3>Weight</h3>
       </div>
       <div class="col-md-2 form-background">
-        <input class="form-control" id="weight" type="text" placeholder="Enter Pounds">
+        <input class="form-control" id="weight" onchange="weightValue ();" type="text" placeholder="Enter Pounds">
       </div>
     </div>
     <!-- End of Weight Sectiion  -->
@@ -108,7 +108,7 @@
         <h3>Age</h3>
       </div>
       <div class="col-md-2 form-background">
-        <input class="form-control" id="age" type="text" placeholder="Age">
+        <input class="form-control" id="age" onchange="ageValue ();" type="text" placeholder="Age" >
       </div>
     </div>
     <!-- End of Age Section -->
@@ -119,11 +119,12 @@
         <h3>Activity Level</h3>
       </div>
       <div class="col-md-2 form-background">
-        <select class="form-control" id="activity" name="activity">
+        <select class="form-control" id="activityList" onchange="maleBMRValue ();">
             <option data-hidden="true">Activity</option>
-            <option id="sedentary" value="1.2">Sedentary</option>
-            <option id="Active" value="1.375">Low Active</option>
-            <option id="Active" value="1.75">Active</option>
+            <option id="activeNone" value="1.2">Couch Potatoe (Little to no excercise)</option>
+            <option id="activeLow" value="1.375">Low Active (Excercise 1-3 times per week)</option>
+            <option id="activeMod" value="1.55"> Moderate Active (Excercise 3-5 times per week)</option>
+            <option id="activeVery" value="1.75"> Very Active (Excercise 6-7 times per week)</option>
           </select>
       </div>
     </div>
@@ -157,7 +158,6 @@
   <!-- Script Section -->
   <script type="text/javascript" src="js/calculator.js"></script>
   <script src="node_modules/jquery/dist/jquery.min.js"></script>
-  <script src="node_modules/popper.js/dist/popper.min.js"></script>
   <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
   <script <src="">
   </script>

@@ -14,7 +14,58 @@
 // Heavy exercise (6–7 days per week)	Daily kilocalories needed = BMR x 1.725
 // Very heavy exercise (twice per day, extra heavy workouts)	Daily kilocalories needed = BMR x 1.9
 
+// activityList
+var activeNone = (1.2);
+var activeLow = (1.375);
+var activeMod = (1.55);
+var activeVery = (1.75);
+// Base BMR Value
+var maleBMR = (88.362);
+var femaleBMR = (447.593);
 
-function calCount() {
-    document.getElementById("calculate") .innerHTML = 5 + 5;
+function maleBMRValue()
+ {
+  var activityValue = document.getElementById("activityList").value;
+  var maleBMRTotal = (activityValue * maleBMR);
+console.log (maleBMRTotal);
 }
+
+// Height List
+function heightValue ()
+{
+    var feetValue = parseInt (document.getElementById("feetList").value);
+    var inchValue = parseInt (document.getElementById("inchList").value);
+    var heightTotal = ((feetValue + inchValue) * 2.54);
+  console.log (heightTotal);
+}
+
+// Weight function
+function weightValue ()
+{
+  var pounds = document.getElementById("weight").value;
+  var poundsTotal = pounds * 0.453592;
+  console.log (poundsTotal);
+}
+// Age value
+function ageValue ()
+{
+var ageInput = parseInt (document.getElementById("age").value);
+var ageTotal = ageInput;
+console.log (ageTotal);
+}
+
+// Calulate Male kilocalories
+
+function calCount () {
+if (male == true);
+
+}
+
+
+
+
+
+
+
+
+// End

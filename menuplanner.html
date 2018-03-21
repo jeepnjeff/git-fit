@@ -5,7 +5,8 @@
     <title>Menu</title>
     <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/menuplanner.css">
-    <link href="https://fonts.googleapis.com/css?family=Play|Roboto+Slab" rel="stylesheet">  </head>
+    <link href="https://fonts.googleapis.com/css?family=Play|Roboto+Slab" rel="stylesheet">
+  </head>
   <body>
     <div class="container-fluid">
       <div class="row">
@@ -20,9 +21,9 @@
           <span class="subheader">Click the button with your calorie requirement</span>
         </div>
         <div class="col-md-12 default-primary-color flex justify">
-          <span class="text-primary-color button" onclick="lowSetting()">1500-2000 Calories</span>
-          <span class="text-primary-color button" onclick="medSetting()">2000-2500 Calories</span>
-          <span class="text-primary-color button" onclick="highSetting()">2500-3000 Calories</span>
+          <button class="text-primary-color button" onclick="lowSetting()">1500-2000 Calories</button>
+          <button class="text-primary-color button" onclick="medSetting()">2000-2500 Calories</button>
+          <button class="text-primary-color button" onclick="highSetting()">2500-3000 Calories</button>
         </div>
       </div>
       <div class="row">
@@ -30,6 +31,7 @@
           <h2>Breakfast:</h2>
         </div>
       </div>
+      <!--Breakfast section-->
       <div class="row border">
         <div class="col-md-4">
           <div class="row flex">
@@ -61,25 +63,54 @@
           <div class="row flex">
             <h3 class="menuheadertext">Option Two</h3>
           </div>
-          <div class="row">
-            <p></p>
-            <p></p>
-            <p></p>
-            <p></p>
+          <div class="row showlow block displaynone">
+            <p>1 whole Egg (Scrambled) (72 Cal)</p>
+            <p>.75 cup Egg Whites (95 Cal)</p>
+            <p>2 slices Ezekiel bread (160 Cal)</p>
+            <p>.5 Grapefruit (82 Cal)</p>
+            <p class="caltotal">Total: 408 Calories</p>
+          </div>
+          <div class="row showmed block displaynone">
+            <p>1 Whole Egg (72 Cal)</p>
+            <p>1 cup Egg Whites (125 Cal)</p>
+            <p>.5 cup Raw Oats (150 Cal)</p>
+            <p>1 cup Fresh Berries (80 Cal)</p>
+            <p class="caltotal">Total: 427 Calories</p>
+          </div>
+          <div class="row showhigh block displaynone">
+            <p>2 Whole Eggs (144 Cal)</p>
+            <p>1 cup Egg Whites (125 Cal)</p>
+            <p>.5 cup Raw Oats (150 Cal)</p>
+            <p>1 cup Fresh Berries (80 Cal)</p>
+            <p class="caltotal">Total: 499 Calories</p>
           </div>
         </div>
         <div class="col-md-4">
           <div class="row flex">
             <h3 class="menuheadertext">Option Three</h3>
           </div>
-          <div class="row">
-            <p id="brk3row1"></p>
-            <p id="brk3row2"></p>
-            <p id="brk3row3"></p>
-            <p id="brk3row4"></p>
+          <div class="row showlow block displaynone">
+            <p>1 Whole Egg (72 Cal)</p>
+            <p>.75 cup Egg Whites (95 Cal)</p>
+            <p>.5 cup Raw Oats (150 Cal)</p>
+            <p>.5 cup Fresh Berries (40 Cal)</p>
+            <p class="caltotal">Total: 357 Calories</p>
+          </div>
+          <div class="row showmed block displaynone">
+            <p>1 Whole Egg (72 Cal)</p>
+            <p>1 cup Egg Whites (125 Cal)</p>
+            <p>.5 cup Raw Oats (150 Cal)</p>
+            <p>1 cup Fresh Berries (80 Cal)</p>
+            <p class="caltotal">Total: 427 Calories</p>
+          </div>
+          <div class="row showhigh block displaynone">
+            <p>2 Whole Eggs (144 Cal)</p>
+            <p>1 cup Egg Whites (125 Cal)</p>
+            <p>.5 cup Raw Oats (150 Cal)</p>
+            <p>1 cup Fresh Berries (80 Cal)</p>
+            <p class="caltotal">Total: 499 Calories</p>
           </div>
         </div>
-      </div>
     </div>
     <script type="text/javascript" src="./node_modules/jquery/dist/jquery.min.js"></script>
     <script type="text/javascript" src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>

@@ -54,14 +54,21 @@ var ageTotal = ageInput;
 console.log (ageTotal);
 }
 
-// Calulate Male kilocalories
-
-// if (male == true);
-function calButton (poundsTotal, ageTotal) {
-  if (male == true);
-  var mResults = parseInt (poundsTotal + ageTotal);
-document.getElementById ("calculate").value.innerHTML = mResults;
+// Calulate Male calories
+function calculateButton (maleBMRTotal, heightTotal, poundsTotal, ageTotal)
+  {
+  if (male==true);
+var a = parseInt(maleBMRTotal);
+var b = parseInt(heightTotal);
+var c = parseInt(poundsTotal);
+var d = parseInt(ageTotal);
+var result;
+result = (parseInt(a) + parseInt(b) + parseInt(c) + parseInt(d));
+document.getElementById("Answer").innerHTML = result;
 }
+
+
+
 
 
 

@@ -19,23 +19,33 @@ var activeNone = (1.2);
 var activeLow = (1.375);
 var activeMod = (1.55);
 var activeVery = (1.75);
+var activeExtra = (1.75);
 // Base BMR Value
-var maleBMR = (88.362);
-var femaleBMR = (447.593);
+// var maleBMR = (88.362);
+// var femaleBMR = (447.593);
 
-function maleBMRValue()
- {
-  var activityValue = document.getElementById("activityList").value;
-  var maleBMRTotal = (activityValue * maleBMR);
-console.log (maleBMRTotal);
+// function maleBMRValue()
+//  {
+//   activityValue = document.getElementById("activityList").value;
+//   maleBMRTotal = (activityValue * maleBMR);
+// console.log (maleBMRTotal);
+// }
+
+// Male Female Radio button
+function maleValue ()
+{
+  var maleGender = parseFloat(document.getElementById("male").value);
+  genderTotal = (maleGender);
+console.log (genderTotal);
 }
+
 
 // Height List
 function heightValue ()
 {
-    var feetValue = parseInt (document.getElementById("feetList").value);
-    var inchValue = parseInt (document.getElementById("inchList").value);
-    var heightTotal = ((feetValue + inchValue) * 2.54);
+    var feetValue = parseFloat (document.getElementById("feetList").value);
+    var inchValue = parseFloat (document.getElementById("inchList").value);
+    heightTotal = ((feetValue + inchValue) * 2.54)*4.799;
   console.log (heightTotal);
 }
 
@@ -43,29 +53,47 @@ function heightValue ()
 function weightValue ()
 {
   var pounds = document.getElementById("weight").value;
-  var poundsTotal = pounds * 0.453592;
+  poundsTotal = (pounds * 0.453592)* 13.397;
   console.log (poundsTotal);
 }
 // Age value
 function ageValue ()
 {
-var ageInput = parseInt (document.getElementById("age").value);
-var ageTotal = ageInput;
+var ageInput = parseFloat (document.getElementById("age").value);
+ageTotal = ageInput * 5.677;
 console.log (ageTotal);
 }
 
-// Calulate Male calories
-function calculateButton (maleBMRTotal, heightTotal, poundsTotal, ageTotal)
-  {
-  if (male==true);
-var a = parseInt(maleBMRTotal);
-var b = parseInt(heightTotal);
-var c = parseInt(poundsTotal);
-var d = parseInt(ageTotal);
-var result;
-result = (parseInt(a) + parseInt(b) + parseInt(c) + parseInt(d));
-document.getElementById("Answer").innerHTML = result;
+function maleBMRValue()
+ {
+  activityValue = parseFloat (document.getElementById("activityList").value);
+  maleBMRTotal = (activityValue);
+console.log (maleBMRTotal);
 }
+// Calulate Male calories
+function calculateButton ()
+  {
+a = (genderTotal);
+b = (heightTotal);
+c = (poundsTotal);
+d = (ageTotal);
+e = (maleBMRTotal);
+var result;
+result = (a + b + c - d)*e;
+document.getElementById("Answer").innerHTML = ("To maintain your current weight you'll need " + result.toFixed(0) + " calories per day.");
+}
+
+function resetForm() {
+var male = (document.getElementById('male').checked = false);
+var female = (document.getElementById('female').checked = false);
+var feetList = (document.getElementById('feetList').value = 'Feet');
+var inchList = (document.getElementById('inchList').value = 'Inch');
+var weight = (document.getElementById('weight').value = '');
+var age = (document.getElementById('age').value = '');
+var activityList = (document.getElementById('activityList').value = 'Activity');
+var Answer = (document.getElementById('Answer').innerHTML = '');
+}
+
 
 
 

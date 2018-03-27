@@ -43,7 +43,7 @@
       <div class="col-md-2 form-background">
         <div class="form-check form-check-inline">
           <label class="form-check-label">
-        <input class="form-check-input"  type="radio" name="gender" id="male" value="optionMale"> Male
+        <input class="form-check-input"  type="radio" name="gender" id="male" value="88.362" onclick="maleValue ();"> Male
       </label>
         </div>
         <div class="form-check form-check-inline">
@@ -125,6 +125,7 @@
             <option id="activeLow" value="1.375">Low Active (Excercise 1-3 times per week)</option>
             <option id="activeMod" value="1.55"> Moderate Active (Excercise 3-5 times per week)</option>
             <option id="activeVery" value="1.75"> Very Active (Excercise 6-7 times per week)</option>
+            <option id="activeExtra" value="1.9"> Beast Mode (Excercise twice daily)</option>
           </select>
       </div>
     </div>
@@ -139,12 +140,12 @@
 
     <div class="row text-center justify-content-center">
       <div class="col-md-4 form-background">
-        <button onclick="reset()" type="button" class="btn btn-light" id="rest">Reset</button>
+        <button name="reset_form" onclick="resetForm()" value="Reset form" type="reset" class="btn btn-light" id="rest">Reset</button>
       </div>
     </div>
 <div class="row text-center justify-content-center">
     <div class="col-md-4 form-background">
-      <div class="results">
+      <div id="box" class="results">
         <h5 id="Answer"></h5>
       </div>
     </div>

@@ -1,0 +1,109 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+.nav-bar {
+  height: 5vh;
+  width: 100%;
+  background-color: #1976D2;
+}
+.header {
+  height: 25vh;
+  width: 100%;
+  background-color: #2196F3;
+  font-size: 36px;
+  color: white;
+}
+.center {
+	text-align: center;
+	position: relative;
+	 top: 50%;
+	 left: 50%;
+	 transform: translateX(-50%) translateY(-50%);
+}
+.center-text {
+  text-align: center;
+}
+.workout-header {
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+}
+.workout-header2 {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+}
+.margin5 {
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+}
+td {
+  width: 33%;
+}
+.print-button {
+	height: 50px;
+	width: 100%;
+	background-color: #1976D2;
+	border-radius: 10px;
+	color: white;
+  text-align: center;
+}
+.printer-pic {
+	position: relative;
+	height: 90%;
+	left: -10px;
+}
+.table-link {
+	text-decoration: none;
+	color: #2196F3;
+}
+.float-right {
+  float: right;
+}

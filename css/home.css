@@ -18,42 +18,54 @@ font-family: 'Lobster', cursive;
 
 /* Body CSS */
 body {
-  background-color: #fff;
-  width: 100%;
-
+}
+.background {
+  background-image: url("../img/git-fit-background-smudge2.png");
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 /* End of Body CSS */
 /*start of navbar and Header */
-.navi-bar {
-  background-color: #1976D2;
-  height: 5vh;
-}
+
 
 .header-bar {
-  background-color: #2196F3;
+  background: -moz-linear-gradient(top,  rgba(25,118,210,1) 0%, rgba(29,133,226,1) 47%, rgba(33,150,243,0.02) 99%, rgba(33,150,243,0) 100%);
+  background: -webkit-linear-gradient(top,  rgba(25,118,210,1) 0%,rgba(29,133,226,1) 47%,rgba(33,150,243,0.02) 99%,rgba(33,150,243,0) 100%);
+  background: linear-gradient(to bottom,  rgba(25,118,210,1) 0%,rgba(29,133,226,1) 47%,rgba(33,150,243,0.02) 99%,rgba(33,150,243,0) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1976d2', endColorstr='#002196f3',GradientType=0 );
   height: 25vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 5vh;
 }
 .header-text {
   colot:#212121;
   font-size: 2.5em;
   font-weight: 400;
   font-family: Lobster;
+  padding-bottom: 6vh;
 }
 
 .form-background {
-  background-color: #757575;
-  padding: 1%;
+  background: rgba(214, 94, 21, .5);
+  padding: .6%;
+  opacity: 1;
+  color: #fff;
+  font-weight:300;
+  font-family: "Anton";
+  font-size: 1.5em;
+
 }
 .results {
     padding: 20px;
     background-color: #fff;
     color: #000;
-    margin: 1.5em 0;
+
     box-sizing: border-box;
+
 }
 .result {
     font-size: 36px;

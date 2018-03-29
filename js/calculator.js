@@ -20,16 +20,6 @@ var activeLow = (1.375);
 var activeMod = (1.55);
 var activeVery = (1.75);
 var activeExtra = (1.75);
-// Base BMR Value
-// var maleBMR = (88.362);
-// var femaleBMR = (447.593);
-
-// function maleBMRValue()
-//  {
-//   activityValue = document.getElementById("activityList").value;
-//   maleBMRTotal = (activityValue * maleBMR);
-// console.log (maleBMRTotal);
-// }
 
 // Male Female Radio button
 function maleValue ()

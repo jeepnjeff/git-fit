@@ -14,6 +14,7 @@
 font-family: 'Roboto Slab', serif;
 font-family: 'Anton', sans-serif;
 font-family: 'Lobster', cursive;
+font-family: 'Montserrat', sans-serif;
 /* End of Google font family */
 
 /* Body CSS */
@@ -41,12 +42,18 @@ body {
   align-items: center;
   margin-bottom: 5vh;
 }
+
 .header-text {
-  colot:#212121;
+  color:#000;
   font-size: 2.5em;
-  font-weight: 400;
-  font-family: Lobster;
+  font-weight: 900;
+  font-family: roboto+Condensed;
   padding-bottom: 6vh;
+}
+
+.navbar-logo{
+  margin-top: -30px;
+  padding: 30px;
 }
 
 .form-background {

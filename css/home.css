@@ -154,14 +154,13 @@ h3 {
 }
 
 .cp-decoration {
-  
   color:#000;
 }
 /* Footer Gradient */
 .footer-bar {
-  background: -moz-linear-gradient(top,  rgba(33,150,243,0) 0%, rgba(28,130,222,1) 49%, rgba(25,118,210,1) 77%);
-  background: -webkit-linear-gradient(top,  rgba(33,150,243,0) 0%,rgba(28,130,222,1) 49%,rgba(25,118,210,1) 77%);
-  background: linear-gradient(to bottom,  rgba(33,150,243,0) 0%,rgba(28,130,222,1) 49%,rgba(25,118,210,1) 77%);
+  background: -moz-linear-gradient(top,  rgba(33,150,243,0) 0%, rgba(28,130,223,1) 62%, rgba(25,118,210,1) 100%);
+  background: -webkit-linear-gradient(top,  rgba(33,150,243,0) 0%,rgba(28,130,223,1) 62%,rgba(25,118,210,1) 100%);
+  background: linear-gradient(to bottom,  rgba(33,150,243,0) 0%,rgba(28,130,223,1) 62%,rgba(25,118,210,1) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#002196f3', endColorstr='#1976d2',GradientType=0 );
   height: 25vh;
   display: flex;
@@ -169,6 +168,4 @@ h3 {
   align-items: center;
   padding-top: 7%;
   margin-top: 3%;
-
-
 }

@@ -60,6 +60,7 @@ function maleBMRValue()
   maleBMRTotal = (activityValue);
 console.log (maleBMRTotal);
 }
+
 // Calulate Male calories
 function calculateButton ()
   {
@@ -71,9 +72,12 @@ e = (maleBMRTotal);
 var result;
 result = (a + b + c - d)*e;
 document.getElementById("Answer").innerHTML = ("To maintain your current weight you'll need " + result.toFixed(0) + " calories per day.");
+document.getElementById('seePlan').style.display = "block";
 }
 
-function resetForm() {
+// Reset form button
+function resetForm()
+{
 var male = (document.getElementById('male').checked = false);
 var female = (document.getElementById('female').checked = false);
 var feetList = (document.getElementById('feetList').value = 'Feet');
@@ -83,7 +87,6 @@ var age = (document.getElementById('age').value = '');
 var activityList = (document.getElementById('activityList').value = 'Activity');
 var Answer = (document.getElementById('Answer').innerHTML = '');
 }
-
 
 
 

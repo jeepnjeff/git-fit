@@ -196,7 +196,7 @@ h3 {
   text-align: center;
 }
 
-.start-button, a {
+.start-button, {
   background: rgba(214, 94, 21, 1);
   margin: auto;
   margin-top: 1%;

@@ -19,7 +19,7 @@ var activeNone = (1.2);
 var activeLow = (1.375);
 var activeMod = (1.55);
 var activeVery = (1.75);
-var activeExtra = (1.75);
+var activeExtra = (1.9);
 
 // Male Female Radio button
 function maleValue ()
@@ -87,15 +87,5 @@ var age = (document.getElementById('age').value = '');
 var activityList = (document.getElementById('activityList').value = 'Activity');
 var Answer = (document.getElementById('Answer').innerHTML = '');
 }
-
-
-
-
-
-
-
-
-
-
 
 // End

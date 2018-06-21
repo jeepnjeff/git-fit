@@ -1,4 +1,3 @@
-
 // The Revised Harris-Benedict Equation
 // Men	BMR = 88.362 + (13.397 x weight in kg) + (4.799 x height in cm) - (5.677 x age in years)
 // Women BMR = 447.593 + (9.247 x weight in kg) + (3.098 x height in cm) - (9.247 x age in years)
@@ -20,72 +19,77 @@ var activeLow = (1.375);
 var activeMod = (1.55);
 var activeVery = (1.75);
 var activeExtra = (1.9);
+var genderTotal = (447.593);
 
-// Female Radio button
-function femaleValue ()
-{
-  var femaleGender = parseFloat(document.getElementById("female").value);
-  genderTotal = (femaleGender);
-console.log (genderTotal);
+// // Female Radio button
+// function femaleValue ()
+// {
+//   var femaleGender = parseFloat(document.getElementById("female").value);
+//   genderTotal = (femaleGender);
+// console.log (genderTotal);
+// }
+
+
+function femaleRadio() {
+    var femaleChecked = document.getElementById('female').addEventListener(true);
+    if (femaleChecked) {
+        console.log(female);
+
+        // Height List
+        function heightValue() {
+            var feetValue = parseFloat(document.getElementById("feetList").value);
+            var inchValue = parseFloat(document.getElementById("inchList").value);
+            heightTotal = ((feetValue + inchValue) * 2.54) * 3.098;
+            console.log(heightTotal);
+        }
+
+        // Weight function
+        function weightValue() {
+            var pounds = document.getElementById("weight").value;
+            poundsTotal = (pounds * 0.453592) * 9.247;
+            console.log(poundsTotal);
+        }
+        // Age value
+        function ageValue() {
+            var ageInput = parseFloat(document.getElementById("age").value);
+            ageTotal = ageInput * 9.247;
+            console.log(ageTotal);
+        }
+
+        function femaleBMRValue() {
+            activityValue = parseFloat(document.getElementById("activityList").value);
+            femaleBMRTotal = (activityValue);
+            console.log(femaleBMRTotal);
+        }
+
+        // Calulate female calories
+        function calculateButton() {
+            a = (genderTotal);
+            b = (heightTotal);
+            c = (poundsTotal);
+            d = (ageTotal);
+            e = (femaleBMRTotal);
+            var result;
+            result = (a + b + c - d) * e;
+            document.getElementById("Answer").innerHTML = ("To maintain your current weight you'll need " + result.toFixed(0) + " calories per day.");
+            document.getElementById('seePlan').style.display = "block";
+        }
+    }
 }
 
 
-// Height List
-function heightValue ()
-{
-    var feetValue = parseFloat (document.getElementById("feetList").value);
-    var inchValue = parseFloat (document.getElementById("inchList").value);
-    heightTotal = ((feetValue + inchValue) * 2.54)*3.098;
-  console.log (heightTotal);
-}
 
-// Weight function
-function weightValue ()
-{
-  var pounds = document.getElementById("weight").value;
-  poundsTotal = (pounds * 0.453592)* 9.247;
-  console.log (poundsTotal);
-}
-// Age value
-function ageValue ()
-{
-var ageInput = parseFloat (document.getElementById("age").value);
-ageTotal = ageInput * 9.247;
-console.log (ageTotal);
-}
-
-function femaleBMRValue()
- {
-  activityValue = parseFloat (document.getElementById("activityList").value);
-  femaleBMRTotal = (activityValue);
-console.log (femaleBMRTotal);
-}
-
-// Calulate female calories
-function calculateButton ()
-  {
-a = (genderTotal);
-b = (heightTotal);
-c = (poundsTotal);
-d = (ageTotal);
-e = (femaleBMRTotal);
-var result;
-result = (a + b + c - d)*e;
-document.getElementById("Answer").innerHTML = ("To maintain your current weight you'll need " + result.toFixed(0) + " calories per day.");
-document.getElementById('seePlan').style.display = "block";
-}
 
 // Reset form button
-function resetForm()
-{
-var male = (document.getElementById('male').checked = false);
-var female = (document.getElementById('female').checked = false);
-var feetList = (document.getElementById('feetList').value = 'Feet');
-var inchList = (document.getElementById('inchList').value = 'Inch');
-var weight = (document.getElementById('weight').value = '');
-var age = (document.getElementById('age').value = '');
-var activityList = (document.getElementById('activityList').value = 'Activity');
-var Answer = (document.getElementById('Answer').innerHTML = '');
+function resetForm() {
+    var male = (document.getElementById('male').checked = false);
+    var female = (document.getElementById('female').checked = false);
+    var feetList = (document.getElementById('feetList').value = 'Feet');
+    var inchList = (document.getElementById('inchList').value = 'Inch');
+    var weight = (document.getElementById('weight').value = '');
+    var age = (document.getElementById('age').value = '');
+    var activityList = (document.getElementById('activityList').value = 'Activity');
+    var Answer = (document.getElementById('Answer').innerHTML = '');
 }
 
-// End
+//End

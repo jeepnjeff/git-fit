@@ -10,34 +10,25 @@
 // Little to no exercise	Daily kilocalories needed = BMR x 1.2
 // Light exercise (1–3 days per week)	Daily kilocalories needed = BMR x 1.375
 // Moderate exercise (3–5 days per week)	Daily kilocalories needed = BMR x 1.55
-// Heavy exercise (6–7 days per week)	Daily kilocalories needed = BMR x 1.725
+// Heavy exercise (6–7 days per week)	Daily kilocalories needed = BMR x 1.7
 // Very heavy exercise (twice per day, extra heavy workouts)	Daily kilocalories needed = BMR x 1.9
 
-// 
-
-// function check() {
-//     if (document.getElementById('male') == 1) {
-//         return calculateFemale;
-//         alert('female checked');
-//         console.log(male)
-//     } else if (document.getElementById('female') == 0) {
-//         return calculateMale;
-//         alert('male checked');
-//     }
-// }
 function check() {
     var radios = document.getElementsByName('gender');
 
     for (let i = 0, length = radios.length; i < length; i++) {
         if (radios[i].checked == 0) {
             calculateFemale();
-
             console.log(radios[i].value);
-
             break;
+        }
+        else {
+        calculatemale();
+        break;
         }
     }
 }
+
 
 
 
@@ -54,33 +45,29 @@ function calculateFemale() {
     const activeNone = (1.2);
     const activeLow = (1.375);
     const activeMod = (1.55);
-    const activeVery = (1.75);
+    const activeVery = (1.7);
     const activeExtra = (1.9);
 
     //Gender BMR Value
     const femaleBMR = (447.593);
-    const maleBMR = (88.362)
 
     //Height Equation for male and female
     let femaleHeightTotal = ((feetValue + inchValue) * 2.54) * 3.098;
-    let maleHeightTotal = ((feetValue + inchValue) * 2.54) * 4.799;
-
+    console.log("height Inch", feetValue + inchValue);
     //Weight equation for male and female
     let femalePoundsTotal = (pounds * 0.453592) * 9.247;
-    let malePoundsTotal = (pounds * 0.453592) * 13.397;
 
     //Age equation for male and female
-    let femaleAgeTotal = ageInput * 9.247;
-    let maleAgeTotal = ageInput * 5.677;
+    let femaleAgeTotal = ageInput * 4.330;
 
     //BMR Total equation for activity list and Base BMR
     let femaleBMRTotal = (activityValue);
-    let maleBMRTotal = (activityValue);
 
-    console.log(femaleHeightTotal);
-    console.log(femalePoundsTotal);
-    console.log(femaleAgeTotal);
-    console.log(femaleBMRTotal);
+    console.log("femaleBMR", femaleBMR);
+    console.log("Height", femaleHeightTotal);
+    console.log("pounds", femalePoundsTotal);
+    console.log("age", femaleAgeTotal);
+    console.log("Activity", femaleBMRTotal);
 
     // Calulate female calories
     a = (femaleBMR);
@@ -90,6 +77,7 @@ function calculateFemale() {
     e = (femaleBMRTotal);
     var result;
     result = (a + b + c - d) * e;
+    console.log (result);
     document.getElementById("Answer").innerHTML = ("To maintain your current weight you'll need " + result.toFixed(0) + " calories per day.");
     document.getElementById('seePlan').style.display = "block";
 }
@@ -108,29 +96,24 @@ function calculatemale() {
     const activeNone = (1.2);
     const activeLow = (1.375);
     const activeMod = (1.55);
-    const activeVery = (1.75);
+    const activeVery = (1.7);
     const activeExtra = (1.9);
 
     //Gender BMR Value
-    const femaleBMR = (447.593);
     const maleBMR = (88.362)
 
     //Height Equation for male and female
-    let femaleHeightTotal = ((feetValue + inchValue) * 2.54) * 3.098;
     let maleHeightTotal = ((feetValue + inchValue) * 2.54) * 4.799;
 
     //Weight equation for male and female
-    let femalePoundsTotal = (pounds * 0.453592) * 9.247;
     let malePoundsTotal = (pounds * 0.453592) * 13.397;
 
     //Age equation for male and female
-    let femaleAgeTotal = ageInput * 9.247;
     let maleAgeTotal = ageInput * 5.677;
 
     //BMR Total equation for activity list and Base BMR
-    let femaleBMRTotal = (activityValue);
     let maleBMRTotal = (activityValue);
-
+    console.log(maleBMR);
     console.log(maleHeightTotal);
     console.log(malePoundsTotal);
     console.log(maleAgeTotal);
@@ -144,6 +127,9 @@ function calculatemale() {
     e = (maleBMRTotal);
     var result;
     result = (a + b + c - d) * e;
+    console.log(result);
+    
+
     document.getElementById("Answer").innerHTML = ("To maintain your current weight you'll need " + result.toFixed(0) + " calories per day.");
     document.getElementById('seePlan').style.display = "block";
 }

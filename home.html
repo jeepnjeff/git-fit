@@ -2,87 +2,93 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Git Fit</title>
-    <!-- Bootstrap Link -->
-    <!-- <script type="text/javascript" src="js/calculatormale.js"></script> -->
-    <script type="text/javascript" src="js/newcalculator.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Git Fit</title>
+  <!-- Bootstrap Link -->
+  <!-- <script type="text/javascript" src="js/calculatormale.js"></script> -->
+  <script type="text/javascript" src="js/newcalculator.js"></script>
 
 
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+    crossorigin="anonymous">
 
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    crossorigin="anonymous">
 
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Condensed|Anton|Montserrat|Lobster|Roboto+Slab">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Condensed|Anton|Montserrat|Lobster|Roboto+Slab">
 
-    <link rel="stylesheet" href="css/home.css">
+  <link rel="stylesheet" href="css/home.css">
 
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
 
 </head>
 
 <body class="background">
-    <!--Header Nav Section  -->
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-12 navi-bar">
-                <div class="navi-bar">
-                </div>
-            </div>
+  <!--Header Nav Section  -->
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12 navi-bar">
+        <div class="navi-bar">
         </div>
+      </div>
     </div>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-12 header-bar header-text">
-                <a href="index.html" class="pull-left"><img class="navbar-logo" src="img/cartoon.png"></a>
-                <h1 class="header-text">Calorie Calculator</h1>
-                <a href="index.html" class="pull-left"><img class="navbar-logo" src="img/cartoon.png"></a>
-            </div>
-        </div>
+  </div>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12 header-bar header-text">
+        <a href="index.html" class="pull-left">
+          <img class="navbar-logo" src="img/cartoon.png">
+        </a>
+        <h1 class="header-text">Calorie Calculator</h1>
+        <a href="index.html" class="pull-left">
+          <img class="navbar-logo" src="img/cartoon.png">
+        </a>
+      </div>
     </div>
+  </div>
 
-    <!-- Form Section -->
-    <!--  Start Gender Row-->
-    <div class="container-fluid">
-        <div class="row justify-content-center text">
-            <div class="col-md-2 form-background">
-                <h3>Gender</h3>
-            </div>
-            <div class="col-md-2 form-background">
-                <div class="form-check form-check-inline">
-                    <label class="form-check-label">
-        <input class="form-check-input"  type="radio" name="gender" id="male" value="1"> Male
-      </label>
-                </div>
-                <div class="form-check form-check-inline">
-                    <label class="form-check-label">
-        <input class="form-check-input" type="radio" name="gender" id="female" value="0"> Female
-      </label>
-                </div>
-            </div>
+  <!-- Form Section -->
+  <!--  Start Gender Row-->
+  <div class="container-fluid">
+    <div class="row justify-content-center text">
+      <div class="col-md-2 form-background">
+        <h3>Gender</h3>
+      </div>
+      <div class="col-md-2 form-background">
+        <div class="form-check form-check-inline">
+          <label class="form-check-label">
+            <input class="form-check-input" type="radio" name="gender" id="male" value="1"> Male
+          </label>
         </div>
-        <!-- End of Gender Row  -->
+        <div class="form-check form-check-inline">
+          <label class="form-check-label">
+            <input class="form-check-input" type="radio" name="gender" id="female" value="0"> Female
+          </label>
+        </div>
+      </div>
+    </div>
+    <!-- End of Gender Row  -->
 
-        <!-- Start of Height Row -->
-        <div class="row justify-content-center">
-            <div class="col-md-2 form-background">
-                <h3>Height</h3>
-            </div>
-            <div class="col-md-1 form-background">
-                <select class="form-control" id="feetList">
+    <!-- Start of Height Row -->
+    <div class="row justify-content-center">
+      <div class="col-md-2 form-background">
+        <h3>Height</h3>
+      </div>
+      <div class="col-md-1 form-background">
+        <select class="form-control" id="feetList">
           <option data-hidden="true">Feet</option>
           <option value="36">3</option>
           <option value="48">4</option>
           <option value="60">5</option>
           <option value="72">6</option>
           <option value="84">7</option>
-       </select>
-            </div>
-            <div class="col-md-1 form-background">
-                <select class="form-control" id="inchList">
+        </select>
+      </div>
+      <div class="col-md-1 form-background">
+        <select class="form-control" id="inchList">
           <option data-hidden="true">Inch</option>
           <option value="0">0</option>
           <option value="1">1</option>
@@ -97,125 +103,129 @@
           <option value="10">10</option>
           <option value="11">11</option>
         </select>
-            </div>
-        </div>
-
-        <!-- End of Height Row -->
-
-        <!-- Start of Weight Sectiion  -->
-        <div class="row justify-content-center">
-            <div class="col-md-2 form-background">
-                <h3>Weight</h3>
-            </div>
-            <div class="col-md-2 form-background">
-                <input class="form-control" id="weight" type="text" placeholder="Enter Pounds">
-            </div>
-        </div>
-        <!-- End of Weight Sectiion  -->
-
-        <!-- Start of Age Section -->
-        <div class="row justify-content-center">
-            <div class="col-md-2 form-background">
-                <h3>Age</h3>
-            </div>
-            <div class="col-md-2 form-background">
-                <input class="form-control" id="age" type="text" placeholder="Age">
-            </div>
-        </div>
-        <!-- End of Age Section -->
-
-        <!-- Start of Activity Level Section -->
-        <div class="row justify-content-center">
-            <div class="col-md-2 form-background">
-                <h3>Activity Level</h3>
-            </div>
-            <div class="col-md-2 form-background">
-                <select class="form-control" id="activityList">
-            <option data-hidden="true">Activity</option>
-            <option id="activeNone" value="1.2">Couch Potatoe (Little to no excercise)</option>
-            <option id="activeLow" value="1.375">Low Active (Excercise 1-3 times per week)</option>
-            <option id="activeMod" value="1.55"> Moderate Active (Excercise 3-5 times per week)</option>
-            <option id="activeVery" value="1.75"> Very Active (Excercise 6-7 times per week)</option>
-            <option id="activeExtra" value="1.9"> Beast Mode (Excercise twice daily)</option>
-          </select>
-            </div>
-        </div>
-        <!-- End of Activity Level Section -->
-
-        <!-- Calculate button -->
-        <div class="row text-center justify-content-center">
-            <div class="col-md-4 form-background">
-                <button name="calcButton" onclick="check()" id="calcButton" type="button" class="btn btn-primary">Calculate</button>
-            </div>
-        </div>
-
-        <div class="row text-center justify-content-center">
-            <div class="col-md-4 form-background">
-                <button name="reset_form" onclick="resetForm()" value="Reset form" type="reset" class="btn btn-light" id="reset">Reset</button>
-            </div>
-        </div>
-        <div class="row text-center justify-content-center">
-            <div class="col-md-4 form-background">
-                <div id="box" class="results">
-                    <h5 id="Answer"></h5>
-                </div>
-            </div>
-        </div>
-        <div class="row text-center justify-content-center">
-            <div id="seePlan" style="display:none" class="col-md-4 form-background see">
-                <button type="button" class="btn btn-primary"><a style="color:#fff" href="menuplanner.html">See Your Plan!</a></button>
-            </div>
-        </div>
-
+      </div>
     </div>
-    <!--Form Container-Fluid Closing div-->
-    <!--Social buttons-->
 
-    <footer>
-        <div class="container-fluid footer-bar">
-            <div>
-                <div class=" col-md-12">
-                    <ul class="list-unstyled list-inline">
-                        <li class="list-inline-item">
-                            <a class="social-fb mx-1">
-                                <i class="fa fa-facebook"> </i>
-                            </a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a class="social-tw mx-1">
-                                <i class="fa fa-twitter"> </i>
-                            </a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a class="social-google mx-1">
-                                <i class="fa fa-google-plus"> </i>
-                            </a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a class="social-instagram mx-1">
-                                <i class="fa fa-instagram"></i>
-                            </a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a class="social-youtube mx-1">
-                                <i class="fa fa-youtube"></i>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
+    <!-- End of Height Row -->
 
-                <!--Social buttons-->
-                <div class="text-center">© 2018 Copyright:
-                    <a class="cp-decoration" href="#"> Git-Fit </a>
-                </div>
-            </div>
+    <!-- Start of Weight Sectiion  -->
+    <div class="row justify-content-center">
+      <div class="col-md-2 form-background">
+        <h3>Weight</h3>
+      </div>
+      <div class="col-md-2 form-background">
+        <input class="form-control" id="weight" type="text" placeholder="Enter Pounds">
+      </div>
+    </div>
+    <!-- End of Weight Sectiion  -->
+
+    <!-- Start of Age Section -->
+    <div class="row justify-content-center">
+      <div class="col-md-2 form-background">
+        <h3>Age</h3>
+      </div>
+      <div class="col-md-2 form-background">
+        <input class="form-control" id="age" type="text" placeholder="Age">
+      </div>
+    </div>
+    <!-- End of Age Section -->
+
+    <!-- Start of Activity Level Section -->
+    <div class="row justify-content-center">
+      <div class="col-md-2 form-background">
+        <h3>Activity Level</h3>
+      </div>
+      <div class="col-md-2 form-background">
+        <select class="form-control" id="activityList">
+          <option data-hidden="true">Activity</option>
+          <option id="activeNone" value="1.2">Couch Potatoe (Little to no excercise)</option>
+          <option id="activeLow" value="1.375">Low Active (Excercise 1-3 times per week)</option>
+          <option id="activeMod" value="1.55"> Moderate Active (Excercise 3-5 times per week)</option>
+          <option id="activeVery" value="1.7"> Very Active (Excercise 6-7 times per week)</option>
+          <option id="activeExtra" value="1.9"> Beast Mode (Excercise twice daily)</option>
+        </select>
+      </div>
+    </div>
+    <!-- End of Activity Level Section -->
+
+    <!-- Calculate button -->
+    <div class="row text-center justify-content-center">
+      <div class="col-md-4 form-background">
+        <button name="calcButton" onclick="check()" id="calcButton" type="button" class="btn btn-primary">Calculate</button>
+      </div>
+    </div>
+
+    <div class="row text-center justify-content-center">
+      <div class="col-md-4 form-background">
+        <button name="reset_form" onclick="resetForm()" value="Reset form" type="reset" class="btn btn-light" id="reset">Reset</button>
+      </div>
+    </div>
+    <div class="row text-center justify-content-center">
+      <div class="col-md-4 form-background">
+        <div id="box" class="results">
+          <h5 id="Answer"></h5>
         </div>
-    </footer>
-    <!--/.Footer-->
+      </div>
+    </div>
+    <div class="row text-center justify-content-center">
+      <div id="seePlan" style="display:none" class="col-md-4 form-background see">
+        <button type="button" class="btn btn-primary">
+          <a style="color:#fff" href="menuplanner.html">See Your Plan!</a>
+        </button>
+      </div>
+    </div>
 
-    <!-- Script Section -->
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </div>
+  <!--Form Container-Fluid Closing div-->
+  <!--Social buttons-->
+
+  <footer>
+    <div class="container-fluid footer-bar">
+      <div>
+        <div class=" col-md-12">
+          <ul class="list-unstyled list-inline">
+            <li class="list-inline-item">
+              <a class="social-fb mx-1">
+                <i class="fa fa-facebook"> </i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a class="social-tw mx-1">
+                <i class="fa fa-twitter"> </i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a class="social-google mx-1">
+                <i class="fa fa-google-plus"> </i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a class="social-instagram mx-1">
+                <i class="fa fa-instagram"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a class="social-youtube mx-1">
+                <i class="fa fa-youtube"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!--Social buttons-->
+        <div class="text-center">© 2018 Copyright:
+          <a class="cp-decoration" href="#"> Git-Fit </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!--/.Footer-->
+
+  <!-- Script Section -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
 
 
 </body>

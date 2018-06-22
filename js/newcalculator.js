@@ -21,32 +21,20 @@ function check() {
             calculateFemale();
             console.log(radios[i].value);
             break;
-        }
-        else {
-        calculatemale();
-        break;
+        } else {
+            calculatemale();
+            break;
         }
     }
 }
 
-
-
-
 function calculateFemale() {
-
 
     let feetValue = parseFloat(document.getElementById("feetList").value);
     let inchValue = parseFloat(document.getElementById("inchList").value);
     let pounds = document.getElementById("weight").value;
     let ageInput = parseFloat(document.getElementById("age").value);
     let activityValue = parseFloat(document.getElementById("activityList").value);
-
-    // activityList
-    const activeNone = (1.2);
-    const activeLow = (1.375);
-    const activeMod = (1.55);
-    const activeVery = (1.7);
-    const activeExtra = (1.9);
 
     //Gender BMR Value
     const femaleBMR = (447.593);
@@ -77,8 +65,11 @@ function calculateFemale() {
     e = (femaleBMRTotal);
     var result;
     result = (a + b + c - d) * e;
-    console.log (result);
-    document.getElementById("Answer").innerHTML = ("To maintain your current weight you'll need " + result.toFixed(0) + " calories per day.");
+    console.log(result);
+    var baseBMR;
+    baseBMR = (a + b + c - d);
+    console.log(baseBMR);
+    document.getElementById("Answer").innerHTML = ("Your base BMR is " + baseBMR.toFixed(0) + " calories per day." + "<br>" + "To maintain your current weight at your exercise level you'll need " + result.toFixed(0) + " calories per day.");
     document.getElementById('seePlan').style.display = "block";
 }
 
@@ -90,14 +81,6 @@ function calculatemale() {
     let pounds = document.getElementById("weight").value;
     let ageInput = parseFloat(document.getElementById("age").value);
     let activityValue = parseFloat(document.getElementById("activityList").value);
-
-
-    // activityList
-    const activeNone = (1.2);
-    const activeLow = (1.375);
-    const activeMod = (1.55);
-    const activeVery = (1.7);
-    const activeExtra = (1.9);
 
     //Gender BMR Value
     const maleBMR = (88.362)
@@ -128,9 +111,11 @@ function calculatemale() {
     var result;
     result = (a + b + c - d) * e;
     console.log(result);
-    
+    var baseBMR;
+    baseBMR = (a + b + c - d);
+    console.log(baseBMR);
 
-    document.getElementById("Answer").innerHTML = ("To maintain your current weight you'll need " + result.toFixed(0) + " calories per day.");
+    document.getElementById("Answer").innerHTML = ("Your base BMR is " + baseBMR.toFixed(0) + " calories per day." + "<br>" + "To maintain your current weight at your exercise level you'll need " + result.toFixed(0) + " calories per day.");
     document.getElementById('seePlan').style.display = "block";
 }
 

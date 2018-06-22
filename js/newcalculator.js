@@ -28,11 +28,11 @@
 function check() {
     var radios = document.getElementsByName('gender');
 
-    for (var i = 0, length = radios.length; i < length; i++) {
-        if (radios[i].checked) {
+    for (let i = 0, length = radios.length; i < length; i++) {
+        if (radios[i].checked == 0) {
+            calculateFemale();
 
-
-            alert(radios[i].value);
+            console.log(radios[i].value);
 
             break;
         }
